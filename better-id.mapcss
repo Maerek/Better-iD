@@ -4,7 +4,7 @@ meta {
     version: "1.0_2025-04-01"; /* don't remove the revision variable */
     icon: "https://raw.githubusercontent.com/Maerek/Better-iD/refs/heads/main/Better-id.png";
     author: "Maerek (spam46200)";
-    link: "https://josm.openstreetmap.de/wiki/Styles/iD";
+    link: "https://github.com/Maerek/Better-iD";
     min-josm-version: "7193";
 }
 
