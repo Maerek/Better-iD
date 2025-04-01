@@ -1,3 +1,4 @@
+![Better-id](https://github.com/Maerek/Better-iD/blob/main/Better-id.png)
 # [EN] Better iD - it's the improved version of original style iD to JOSM
 Better iD have copied all from iD style created by Leif Rasmussen (from version 0.98_2025_03_20) and have copied missing icons and some missing area render tags from deafault JOSM mapcss.
 
