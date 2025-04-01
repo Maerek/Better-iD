@@ -2,7 +2,7 @@ meta {
     title: "Better-iD";
     description: "Renders roads, waterways, landuse, and other features like iD. And it copy some icons and propeties for areas from deafault JOSM mapcss. Made from version 0.98_2025-03-20 by Leif Rasmussen";
     version: "1.0_2025-04-01"; /* don't remove the revision variable */
-    icon: "https://wiki.openstreetmap.org/w/images/thumb/3/34/ID.svg/240px-ID.svg.png";
+    icon: "https://raw.githubusercontent.com/Maerek/Better-iD/refs/heads/main/Better-id.png";
     author: "Maerek (spam46200)";
     link: "https://josm.openstreetmap.de/wiki/Styles/iD";
     min-josm-version: "7193";
