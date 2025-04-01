@@ -3750,6 +3750,22 @@ node[emergency=water_tank] {
     icon-image: "presets/emergency/water_tank.svg";
     set icon_z17;
 }
+node[emergency=suction_point] {
+    icon-image: "presets/emergency/suction_point.svg";
+    set icon_z17;
+}
+node[emergency=life_ring] {
+    icon-image: "presets/emergency/life_ring.svg";
+    set icon_z17;
+}
+node[emergency=lifeguard] {
+    icon-image: "presets/emergency/lifeguard.svg";
+    set icon_z17;
+}
+node[emergency=emergency_ward_entrance] {
+    icon-image: "presets/emergency/emergency_ward_entrance.svg";
+    set icon_z17;
+}
 node[emergency=phone] {
     icon-image: "presets/vehicle/emergency_phone.svg";
     set icon_z17;
@@ -3776,6 +3792,31 @@ node[emergency=assembly_point] {
 }
 node[emergency=siren] {
     icon-image: "presets/emergency/siren.svg";
+    set icon_z17;
+}
+
+/****************/
+/* police tags */
+/****************/
+node[police=barracks],
+node[police=car_pound],
+node[police=checkpoint],
+node[police=detention],
+node[police=naval_base],
+node[police=offices],
+node[police=range],
+node[police=storage],
+node[police=training_node],
+node[police=yes] {
+    icon-image: "presets/service/police_non_public.svg";
+    set icon_z17;
+}
+
+/*******************/
+/* healthcare tags */
+/*******************/
+node[healthcare=laboratory] {
+    icon-image: "presets/health/laboratory.svg";
     set icon_z17;
 }
 
@@ -3807,6 +3848,10 @@ node[amenity=biergarten] {
 }
 node[amenity=nightclub] {
     icon-image: "presets/leisure/nightclub.svg";
+    set icon_z17;
+}
+node[amenity=gambling] {
+    icon-image: "presets/leisure/gambling.svg";
     set icon_z17;
 }
 node[amenity=stripclub] {
@@ -3855,6 +3900,9 @@ way[amenity=bicycle_parking] {
 area[amenity=parking_space] {
     fill-color: parking_space#f7efb8;
 }
+area[amenity=trolley_bay] {
+    fill-color: trolley_bay#b8d8f7;
+}
 area[amenity=parking],
 area[amenity=motorcycle_parking],
 area[amenity=bicycle_rental],
@@ -3870,6 +3918,10 @@ area[amenity=driver_training]{
 }
 node[amenity=parking_space] {
     icon-image: "presets/vehicle/parking/parking_space.svg";
+    set icon_z17;
+}
+node[amenity=trolley_bay] {
+    icon-image: "presets/vehicle/parking/trolley_bay.svg";
     set icon_z17;
 }
 node[amenity=parking] {
@@ -3914,8 +3966,16 @@ node[amenity=bicycle_repair_station] {
     icon-image: "presets/vehicle/bicycle_repair_station.svg";
     set icon_z17;
 }
+node[amenity=bicycle_wash] {
+    icon-image: "presets/vehicle/bicycle_wash.svg";
+    set icon_z17;
+}
 node[amenity=car_rental] {
     icon-image: "presets/vehicle/car_rental.svg";
+    set icon_z17;
+}
+node[amenity=car_pooling] {
+    icon-image: "presets/vehicle/car_pooling.svg";
     set icon_z17;
 }
 node[amenity=car_sharing] {
@@ -4003,6 +4063,10 @@ node[amenity=townhall] {
     icon-image: "presets/service/townhall.svg";
     set icon_z17;
 }
+node[amenity=events_venue] {
+    icon-image: "presets/service/events_venue.svg";
+    set icon_z17;
+}
 node[amenity=community_centre] {
     icon-image: "presets/service/community_centre.svg";
     set icon_z17;
@@ -4023,17 +4087,32 @@ node[amenity=fountain] {
     icon-image: "presets/misc/fountain.svg";
     set icon_z17;
 }
+area[amenity=animal_boarding],
+area[amenity=animal_breeding],
 area[amenity=place_of_worship],
+area[amenity=monastery],
 area[amenity=grave_yard],
 area[amenity=crematorium],
 area[amenity=post_office],
 area[amenity=studio],
+area[landuse=school],
 area[amenity=school],
 area[amenity=university],
 area[amenity=college],
 area[amenity=kindergarten],
-area[amenity=driving_school] {
+area[amenity=language_school],
+area[amenity=music_school],
+area[amenity=driving_school],
+area[amenity=driver_training] {
     fill-color: amenity_light#f7efb7;
+}
+node[amenity=animal_boarding] {
+    icon-image: "presets/accommodation/animal_boarding.svg";
+    set icon_z17;
+}
+node[amenity=animal_breeding] {
+    icon-image: "presets/misc/animal_breeding.svg";
+    set icon_z17;
 }
 node[amenity=place_of_worship] {
     icon-image: "presets/religion/religion.svg";
@@ -4047,8 +4126,16 @@ node[amenity=place_of_worship][religion=buddhist] {
     icon-image: "presets/religion/buddhism.svg";
     set icon_z17;
 }
+node[amenity=place_of_worship][religion=caodaism][!is_prop_set(icon-image)] {
+    icon-image: "presets/misc/no_icon.svg";
+    set icon_z17;
+}
 node[amenity=place_of_worship][religion=christian] {
     icon-image: "presets/religion/church.svg";
+    set icon_z17;
+}
+node[amenity=place_of_worship][religion=confucian] {
+    icon-image: "presets/religion/confucian.svg";
     set icon_z17;
 }
 node[amenity=place_of_worship][religion=hindu] {
@@ -4083,12 +4170,20 @@ node[amenity=place_of_worship][religion=taoist] {
     icon-image: "presets/religion/taoism.svg";
     set icon_z17;
 }
+node[amenity=place_of_worship][religion=tenrikyo] {
+    icon-image: "presets/religion/tenrikyo.svg";
+    set icon_z17;
+}
 node[amenity=place_of_worship][religion=unitarian][!is_prop_set(icon-image)] {
     icon-image: "presets/misc/no_icon.svg";
     set icon_z17;
 }
 node[amenity=place_of_worship][religion=zoroastrian][!is_prop_set(icon-image)] {
     icon-image: "presets/misc/no_icon.svg";
+    set icon_z17;
+}
+node[amenity=monastery] {
+    icon-image: "presets/religion/monastery.svg";
     set icon_z17;
 }
 node[amenity=grave_yard] {
@@ -4105,6 +4200,10 @@ node[amenity=post_office] {
 }
 node[amenity=post_box] {
     icon-image: "presets/service/post_box.svg";
+    set icon_z17;
+}
+node[amenity=letter_box] {
+    icon-image: "presets/service/letter_box.svg";
     set icon_z17;
 }
 node[amenity=studio] {
